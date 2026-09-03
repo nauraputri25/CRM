@@ -474,7 +474,7 @@
     <!-- INTERACTIVE JAVASCRIPT LOGIC -->
     <script>
       let isWaValid = false;
-      const defaultUnits = ["Quranic Daycare 1", "Quranic Daycare 2", "TK Islam Cendekia Muda", "SD Islam Cendekia Muda Bandung", "SD Islam Cendekia Muda Makassar", "SD Islam Cendekia Muda Bilingual", "SMP Islam Cendekia Muda", "SMA Islam Cendekia Muda"];
+      const defaultUnits = ["Quranic Daycare Cendekia Muda 1", "Quranic Daycare Cendekia Muda 2", "TK Islam Cendekia Muda", "SD Islam Cendekia Muda Bandung", "SD Islam Cendekia Muda Makassar", "SD Islam Cendekia Muda Bilingual", "SMP Islam Cendekia Muda", "SMA Islam Cendekia Muda"];
       const defaultSumber = ["Rekomendasi", "Instagram", "Ads", "Baliho", "Website", "AI", "TikTok", "YouTube", "Lainnya"];
 
       // Toggle Mobile Menu
@@ -530,7 +530,7 @@
         const sourceUnits = (res && res.units && res.units.length > 0) ? res.units : defaultUnits;
         const units = sourceUnits.flatMap(unit =>
           unit.toLowerCase() === "quranic daycare cendekia muda"
-            ? ["Quranic Daycare 1", "Quranic Daycare 2"]
+            ? ["Quranic Daycare Cendekia Muda 1", "Quranic Daycare Cendekia Muda 2"]
             : [unit]
         );
         const sumbers = (res && res.sumberInfo && res.sumberInfo.length > 0) ? res.sumberInfo : defaultSumber;

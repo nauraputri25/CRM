@@ -752,8 +752,8 @@
       ];
 
       const masterUnitsConfig = [
-        { name: "Quranic Daycare 1", level: "Daycare 1", target: 40, existing: 32, matchKeys: ["daycare 1", "quranic daycare 1"] },
-        { name: "Quranic Daycare 2", level: "Daycare 2", target: 40, existing: 30, matchKeys: ["daycare 2", "quranic daycare 2"] },
+        { name: "Quranic Daycare Cendekia Muda 1", level: "Daycare 1", target: 40, existing: 32, matchKeys: ["daycare 1", "quranic daycare cendekia muda 1"] },
+        { name: "Quranic Daycare Cendekia Muda 2", level: "Daycare 2", target: 40, existing: 30, matchKeys: ["daycare 2", "quranic daycare cendekia muda 2"] },
         { name: "TK Islam Cendekia Muda (PG)", level: "TK (PG)", target: 20, existing: 0, matchKeys: ["pg", "playgroup"] },
         { name: "TK Islam Cendekia Muda (TK-A)", level: "TK-A", target: 80, existing: 17, matchKeys: ["tk-a", "tk a"] },
         { name: "TK Islam Cendekia Muda (TK-B)", level: "TK-B", target: 120, existing: 90, matchKeys: ["tk-b", "tk b"] },
@@ -849,8 +849,8 @@
         const list2 = document.getElementById("unitCheckboxListTab2");
 
         const defaultUnitsList = unitsList && unitsList.length > 0 ? unitsList : [
-          "Quranic Daycare 1",
-          "Quranic Daycare 2",
+          "Quranic Daycare Cendekia Muda 1",
+          "Quranic Daycare Cendekia Muda 2",
           "TK Islam Cendekia Muda",
           "SD Islam Cendekia Muda Bandung",
           "SD Islam Cendekia Muda Makassar",
@@ -1122,7 +1122,7 @@
         if (masterData.units && masterData.units.length > 0) {
           const units = masterData.units.flatMap(unit =>
             unit.toLowerCase() === "quranic daycare cendekia muda"
-              ? ["Quranic Daycare 1", "Quranic Daycare 2"]
+              ? ["Quranic Daycare Cendekia Muda 1", "Quranic Daycare Cendekia Muda 2"]
               : [unit]
           );
           renderUnitCheckboxes([...new Set(units)]);

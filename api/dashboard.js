@@ -55,7 +55,7 @@ export default async function handler(req, res) {
     const privateKey = (process.env.GOOGLE_PRIVATE_KEY || '').replace(/\\n/g, '\n');
 
     // Default fallback masterdata options if environment variables are not set yet
-    const fallbackUnits = ["Quranic Daycare 1", "Quranic Daycare 2", "TK Islam Cendekia Muda", "SD Islam Cendekia Muda Bandung", "SD Islam Cendekia Muda Makassar", "SD Islam Cendekia Muda Bilingual", "SMP Islam Cendekia Muda", "SMA Islam Cendekia Muda"];
+    const fallbackUnits = ["Quranic Daycare Cendekia Muda 1", "Quranic Daycare Cendekia Muda 2", "TK Islam Cendekia Muda", "SD Islam Cendekia Muda Bandung", "SD Islam Cendekia Muda Bilingual", "SD Islam Cendekia Muda Makassar", "SMP Islam Cendekia Muda", "SMA Islam Cendekia Muda"];
     const fallbackStatus = ["Leads Cold", "Warm Leads", "Hot Leads", "Closing / Siswa Baru", "Batal / Inactive"];
     const fallbackSumber = ["Word of Mouth", "Instagram", "Ads", "Baliho", "Website", "AI", "TikTok", "YouTube", "Lainnya"];
     const fallbackDiscount = ["Tanpa Diskon", "Diskon Early Bird (10%)", "Diskon Siblings (15%)", "Diskon Alumni (20%)", "Diskon Beasiswa (50%)", "Diskon Khusus (Custom)"];
